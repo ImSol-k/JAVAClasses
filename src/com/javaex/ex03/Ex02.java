@@ -2,30 +2,34 @@ package com.javaex.ex03;
 
 import java.util.Scanner;
 
-public class Ex01 {
+public class Ex02 {
 
 	public static void main(String[] args) {
-		
-		//조건문 if(조건식)
-		//조건식의 값은 무조건 boolen값
 		
 		Scanner in = new Scanner(System.in);
 		int score;
 		
-		
 		System.out.print("점수 : ");
 		score = in.nextInt();
-				
-		//score가 60이상이면
-		if(60 <= score) {
+		
+		if(score >= 60 && score <= 100) {
 			//true
 			System.out.println("합격입니다.");
 		}
 		
+		else if(score > 60 && score <= 100) {
+			System.out.println("불합격입니다.");
+		}
+		
+		else  {
+			//false
+			System.out.println("점수범위에서 벗어남");
+		}
+		
 		
 		in.close();
-					
-
+		
+		
 	}
 
 }
