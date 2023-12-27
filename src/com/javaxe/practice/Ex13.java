@@ -10,7 +10,7 @@ public class Ex13 {
 		//0은 입력하지 않는다.
 		
 		Scanner in = new Scanner(System.in);
-		int num1, num2, divisor;
+		int num1, num2;
 		
 		System.out.print("첫번째 숫자 : ");
 		num1 = in.nextInt();

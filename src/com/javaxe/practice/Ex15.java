@@ -14,7 +14,7 @@ public class Ex15 {
 		
 		Scanner in = new Scanner(System.in);
 		String symbol;
-		float num1, num2, result;
+		float num1, num2;
 		
 		System.out.println("출력되는 내용을 입력하세요.");
 		System.out.print("기호 : ");

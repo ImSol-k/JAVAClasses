@@ -35,6 +35,8 @@ public class Ex12 {
 			}
 		}
 		System.out.println("가장 작은수는" + small + " 입니다.");
+		
+		in.close();
 
 	}
 

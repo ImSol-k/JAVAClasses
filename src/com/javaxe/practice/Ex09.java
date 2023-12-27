@@ -31,7 +31,7 @@ public class Ex09 {
 		}
 		
 		
-		
+		in.close();
 		
 		
 
