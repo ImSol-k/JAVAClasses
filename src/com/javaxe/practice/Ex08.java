@@ -10,7 +10,7 @@ public class Ex08 {
 		//저체중, 표준, 과페중을 구분하여 출력하세요
 		
 		Scanner in = new Scanner(System.in);
-		float bmi, cm, kg, m, standard;
+		float cm, kg, standard;
 		
 		System.out.println("키와 몸무게를 입력해주세요.");
 		System.out.print("키 : ");
@@ -18,25 +18,19 @@ public class Ex08 {
 		System.out.print("몸무게 : ");
 		kg = in.nextFloat();
 		
-		m = cm / 100;
+		standard = (cm - 100) * 0.9f;
 		
-		bmi = kg / (cm * cm);
-		
-		if(bmi >= 0 && bmi < 18.5) {
-			System.out.println("저체중 입니다.");
-			standard = (m * m) * 22;
+		if(standard > kg) {
+			System.out.println("저체중 입니다.");			
 		}
-		else if(bmi > 18.5 && bmi < 23) {
+		else if(standard == kg) {
 			System.out.println("표준 입니다.");
-			standard = (m * m) * 22;
 		}
-		else if(bmi > 23.0 && bmi < 25) {
+		else if(standard < kg) {
 			System.out.println("과체중 입니다.");
-			standard = (m * m) * 22;
 		}
 		else {
 			System.out.println("비만입니다");
-			standard = (m * m) * 22;
 		}
 		System.out.println("표준체중 : " + standard);
 		
