@@ -16,6 +16,7 @@ public class Ex04 {
 		System.out.println("과목코드를 입력하세요");
 		System.out.println("1(A).자바  2(B).C  3(C).C++  4(D).파이썬");
 		System.out.print("과목코드 : ");
+		//string에서 char형으로변환 인덱스 0번을 받아온다
 		co = in.next().charAt(0);
 
 		switch (co) {
