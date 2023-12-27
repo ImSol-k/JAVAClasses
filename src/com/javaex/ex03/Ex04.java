@@ -6,8 +6,8 @@ public class Ex04 {
 
 	public static void main(String[] args) {
 
-		// 조건문(switch)
-		//
+		//조건문(switch)
+		//조건식이 모두 ==일때 사용
 
 		Scanner in = new Scanner(System.in);
 		int code;
@@ -21,18 +21,23 @@ public class Ex04 {
 			case 1:
 				System.out.println("R101호");
 				break;
+				
 			case 2:
 				System.out.println("R202호");
 				break;
+				
 			case 3:
 				System.out.println("R303호");
 				break;
+				
 			case 4:
 				System.out.println("R404호");
 				break;
+				
 			default:
 				System.out.println("상담원에게 문의하세요");
 				break;
+				
 		}
 
 		in.close();
