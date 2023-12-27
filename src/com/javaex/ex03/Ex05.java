@@ -2,7 +2,6 @@ package com.javaex.ex03;
 
 import java.util.Scanner;
 
-import java.util.Scanner;
 
 public class Ex05 {
 
