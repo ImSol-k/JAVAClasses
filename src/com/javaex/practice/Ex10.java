@@ -19,10 +19,14 @@ public class Ex10 {
 			System.out.print("숫자 : ");
 			num = in.nextInt();
 			
+			//입력받은수보다 big이 더 크면
 			if(num < big) {
+				//big에 큰수big저장
 				big = big;
 			}
+			//입력받은수가 더 크면
 			else {
+				//big에 입력받은수num저장
 				big = num;
 			}
 			
