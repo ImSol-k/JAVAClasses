@@ -2,26 +2,23 @@ package com.javaex.ex04;
 
 import java.util.Scanner;
 
-public class Ex01 {
+public class Ex03 {
 
 	public static void main(String[] args) {
 		
-		//반복문(while)
-		//필수요소 초기값, 증감식, 조건식 
+		//반복문(for)
+		//초기화, 조건식, 증감식이 한줄에 들어간다
+		
 		Scanner in = new Scanner(System.in);
-		int i = 0;
 		int j;
 		
 		System.out.print("반복횟수 : ");
 		j = in.nextInt();
 		
-		
-		while(i < j) {		
-			
+		for(int i = 0; i < j; i++) {
 			System.out.println("I like Java" + i);
-			
-			i++;
 		}
+		
 		
 		in.close();
 	}
