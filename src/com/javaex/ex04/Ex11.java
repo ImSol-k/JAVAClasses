@@ -9,6 +9,7 @@ public class Ex11 {
 
 		int num = 20;
 
+		System.out.println("2의배수 3의배수 제외하고 출력");
 		for (int i = 1; i <= num; i++) {
 			if (i % 2 == 0 || i % 3 == 0) {
 				continue;
@@ -17,7 +18,16 @@ public class Ex11 {
 				System.out.println(i);
 			}
 		}
-
+		System.out.println("====================");
+		System.out.println("2의배수 3의배수만 출력");
+		for (int i = 1; i <= num; i++) {
+			if (!(i % 2 == 0 || i % 3 == 0)) {
+				continue;
+			}
+			else {
+				System.out.println(i);
+			}
+		}
 	}
 
 }
