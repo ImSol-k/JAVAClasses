@@ -7,7 +7,6 @@ public class Ex07 {
 	public static void main(String[] args) {
 		
 		Scanner in = new Scanner(System.in);
-		//2단부터 시작
 		int dan1, dan2;
 		int sum;
 		
@@ -16,7 +15,7 @@ public class Ex07 {
 		System.out.print("몇단까지 출력? : ");
 		dan2 = in.nextInt();
 		
-		//총 dan2단까지 출력한다
+		//dan1단부터 dan2단까지 출력한다
 		for(int i = dan1; i <= dan2; i++) {
 			
 			//곱셈연산하는 for문
