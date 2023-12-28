@@ -32,34 +32,40 @@ public class Ex23 {
 		
 		if(adult) {
 			System.out.println("20살 이상");
+			if(even) {
+				if(year % 2 == 0) {
+					System.out.println("건강검진해");
+					if(age >= 40){
+						System.out.println("암 검사");
+					}
+					else {
+						System.out.println("암 검사 X");
+					}
+				}
+				else {
+					System.out.println("건강검진해아님");
+				}
+			}
+			else {
+				if(year % 2 == 1){
+					System.out.println("건강검진해");
+					if(age >= 40){
+						System.out.println("암 검사");
+					}
+					else {
+						System.out.println("암 검사 X");
+					}
+				}
+				else {
+					System.out.println("건강검진해아님");
+				}
+			}
 		}
 		else {
 			System.out.println("20살미만 건강검진대상이 아님");
 		}
 		
-		if(even) {
-			if(year % 2 == 0) {
-				System.out.println("건강검진해");
-			}
-			else {
-				System.out.println("건강검진해아님");
-			}
-		}
-		else {
-			if(year % 2 == 1){
-				System.out.println("건강검진해");
-			}
-			else {
-				System.out.println("건강검진해아님");
-			}
-		}
 		
-		if(age >= 40){
-			System.out.println("암 검사");
-		}
-		else {
-			System.out.println("암 검사 X");
-		}
 		
 		in.close();
 	}
