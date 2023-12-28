@@ -21,21 +21,32 @@ public class Ex19 {
 			System.out.println("----------------------------");
 			System.out.print("선택>");
 			num = in.nextInt();
-			switch(num) {
-			case 1:
+			if(num == 1) {
 				System.out.print("예금액>");
 				inMon = in.nextInt();
-				break;
-			case 2:
-				System.out.print("출금액>");
-				break;
-				
-				
+				mon = inMon + mon;
 			}
+			else if(num == 2) {
+				System.out.print("출금액>");
+				outMon = in.nextInt();
+				mon = mon - outMon;
+			}
+			else if(num == 3) {
+				System.out.println("잔고액>" + mon);
+			}
+			else if(num == 4) {
+				System.out.println("프로그램 종료");
+				break;
+			}
+			else {
+				System.out.println("다시 입력해주세요");
+			}
+				
 			
 			
 		}
 		
+		in.close();
 	}
 
 }
