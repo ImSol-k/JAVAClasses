@@ -10,10 +10,7 @@ public class Ex11 {
 		int num = 20;
 
 		for (int i = 1; i <= num; i++) {
-			if (i % 2 == 0) {
-				continue;
-			} 
-			else if (i % 3 == 0) {
+			if (i % 2 == 0 || i % 3 == 0) {
 				continue;
 			} 
 			else {
