@@ -14,33 +14,58 @@ public class Ex19 {
 		
 		Scanner in = new Scanner(System.in);
 		int num, inMon, outMon, mon = 0;
+		boolean start = true;
 		
-		while(true) {
+		while(start) {
 			System.out.println("----------------------------");
 			System.out.println("1.예금 | 2.출금 | 3.잔고 | 4.종료");
 			System.out.println("----------------------------");
 			System.out.print("선택>");
 			num = in.nextInt();
-			if(num == 1) {
+			switch(num) {
+			case 1:
 				System.out.print("예금액>");
 				inMon = in.nextInt();
 				mon = inMon + mon;
-			}
-			else if(num == 2) {
+				break;
+			case 2:
 				System.out.print("출금액>");
 				outMon = in.nextInt();
 				mon = mon - outMon;
-			}
-			else if(num == 3) {
-				System.out.println("잔고액>" + mon);
-			}
-			else if(num == 4) {
-				System.out.println("프로그램 종료");
 				break;
-			}
-			else {
+			case 3:
+				System.out.println("잔고액>" + mon);
+				break;
+			case 4:
+				System.out.println("프로그램 종료");
+				start = false;
+				break;
+			default:
 				System.out.println("다시 입력해주세요");
+				break;
+					
 			}
+			
+//			if(num == 1) {
+//				System.out.print("예금액>");
+//				inMon = in.nextInt();
+//				mon = inMon + mon;
+//			}
+//			else if(num == 2) {
+//				System.out.print("출금액>");
+//				outMon = in.nextInt();
+//				mon = mon - outMon;
+//			}
+//			else if(num == 3) {
+//				System.out.println("잔고액>" + mon);
+//			}
+//			else if(num == 4) {
+//				System.out.println("프로그램 종료");
+//				start = false;
+//			}
+//			else {
+//				System.out.println("다시 입력해주세요");
+//			}
 				
 			
 			
