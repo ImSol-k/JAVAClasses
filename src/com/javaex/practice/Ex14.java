@@ -2,11 +2,9 @@ package com.javaex.practice;
 
 import java.util.Scanner;
 
-public class Ex13 {
+public class Ex14 {
 
 	public static void main(String[] args) {
-		
-		//숫자 한개를 입력받아 입력한 숫자까지의 누적 합계 구하는 프로그램 작성
 		
 		Scanner in = new Scanner(System.in);
 		int num, sum = 0;
@@ -15,10 +13,18 @@ public class Ex13 {
 		num = in.nextInt();
 		for(int i = 1; i <= num; i++) {
 			sum = i + sum;
+			System.out.print(i);
+			if(i != num) {
+				System.out.print("+");
+			}
+			else {
+				System.out.println();
+			}
 		}
 		
 		System.out.println("합계 : " + sum);
-
+		
+		
 		in.close();
 	}
 
