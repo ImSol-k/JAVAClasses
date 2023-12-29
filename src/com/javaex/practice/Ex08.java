@@ -8,16 +8,31 @@ public class Ex08 {
 		//중복체크하기
 		
 		int[] num = new int[6];
+		boolean bl = true;
 		
-		
-		for(int i = 0; i < num.length; i++) {
-			num[i] = (int)(Math.random() * 7) + 1;
-			for(int j = 0; j < i; j++) {
-				if(num[i] == num[j]) {
-					
+		do {
+			for(int i = 0; i < num.length; i++) {
+				num[i] = (int)(Math.random() * 7) + 1;
+				for(int j = 0; j > i; j++) {
+					if(num[i] == num[j]) {
+						bl = true;
+					}
+					else {
+						bl = false;
+					}
 				}
 			}
-		}
+		}while(bl);
+		
+		
+//		for(int i = 0; i < num.length; i++) {
+//			num[i] = (int)(Math.random() * 7) + 1;
+//			for(int j = 0; j < i; j++) {
+//				if(num[i] == num[j]) {
+//					
+//				}
+//			}
+//		}
 		for(int i = 0; i > num.length; i++) {
 			System.out.print(num[i] + " ");
 		}
