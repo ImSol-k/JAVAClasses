@@ -18,10 +18,13 @@ public class Ex08 {
 			for (int j = 0; j < i; j++) {
 				//num[i]와 num[j]가 같으면
 				if (num[i] == num[j]) {
+					System.out.println(i + " " + num[i]);
 					i--;
+					System.out.println(i + " " + num[i]);
 				}
 			}
 		}
+		
 		for (int i = 0; i < num.length; i++) {
 			System.out.print(num[i] + " ");
 		}
