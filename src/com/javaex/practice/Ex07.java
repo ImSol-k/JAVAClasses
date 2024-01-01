@@ -31,15 +31,19 @@ public class Ex07 {
 			
 			//입력받은 돈이 wonArray[i]보다 큰 경우
  		if(mon >= wonArray[i]) {
+ 			
 			//현금 몇개인지 구하기(몫)
 				wonArr[i] = mon / wonArray[i];
+				
 				//현금 갯수만큼 입력받은돈 마이너스
 				mon = mon - wonArray[i] * wonArr[i];
 			}
+ 		
 			//입력받은 돈이 wonArray[i]보다 작은경우 갯수는 0으로 맞춘다
 			else {
 				wonArr[i] = 0;
 			}
+ 		
 			System.out.println(wonArray[i] + "원 : " + wonArr[i] + "개");
 		}
 		

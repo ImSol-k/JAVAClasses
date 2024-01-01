@@ -16,11 +16,12 @@ public class Ex08 {
 
 			//중복체크
 			for (int j = 0; j < i; j++) {
+				
 				//num[i]와 num[j]가 같으면
 				if (num[i] == num[j]) {
-					System.out.println(i + " " + num[i]);
+					
+					//전 인덱스로 돌아가서 다시 랜덤한 수를 구한다
 					i--;
-					System.out.println(i + " " + num[i]);
 				}
 			}
 		}

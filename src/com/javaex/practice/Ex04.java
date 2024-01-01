@@ -11,8 +11,14 @@ public class Ex04 {
 		int num = 0;
 		
 		for(int i = 0; i < data.length; i++) {
+			
+			//3의 배수이면
 			if (data[i] % 3 ==0) {
+				
+				//3의배수인수더하기
 				result = data[i] + result;
+				
+				//3의 배수인 수가 나올때마다 갯수 저장
 				num++;
 			}
 			
