@@ -30,8 +30,8 @@ public class Ex07 {
 		for(int i = 0; i < wonArray.length; i++) {
 			
 			//입력받은 돈이 wonArray[i]보다 큰 경우
-			if(mon >= wonArray[i]) {
-				//현금 몇개인지 구하기(몫)
+ 		if(mon >= wonArray[i]) {
+			//현금 몇개인지 구하기(몫)
 				wonArr[i] = mon / wonArray[i];
 				//현금 갯수만큼 입력받은돈 마이너스
 				mon = mon - wonArray[i] * wonArr[i];
