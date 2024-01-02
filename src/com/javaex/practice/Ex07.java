@@ -1,5 +1,6 @@
 package com.javaex.practice;
 
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class Ex07 {
@@ -10,6 +11,7 @@ public class Ex07 {
 		
 		Scanner in = new Scanner(System.in);
 		int mon= 0;
+		int num = 0;;
 		int[] wonArr = new int[10];
 		int[] wonArray = new int[10];
 		wonArray[0] = 50000;
@@ -27,23 +29,20 @@ public class Ex07 {
 		System.out.print("금액 : ");
 		mon = in.nextInt();
 		
-		for(int i = 0; i < wonArray.length; i++) {
-			
-			//입력받은 돈이 wonArray[i]보다 큰 경우
- 		if(mon >= wonArray[i]) {
- 			
-			//현금 몇개인지 구하기(몫)
-				wonArr[i] = mon / wonArray[i];
+		for (int i = 0; i < wonArray.length; i++) {
+
+			// 입력받은 돈이 wonArray[i]보다 큰 경우
+			if (mon >= wonArray[i]) {
 				
-				//현금 갯수만큼 입력받은돈 마이너스
+				wonArr[i] = mon / wonArray[i];
 				mon = mon - wonArray[i] * wonArr[i];
 			}
- 		
-			//입력받은 돈이 wonArray[i]보다 작은경우 갯수는 0으로 맞춘다
+
+			// 입력받은 돈이 wonArray[i]보다 작은경우 갯수는 0으로 맞춘다
 			else {
 				wonArr[i] = 0;
 			}
- 		
+
 			System.out.println(wonArray[i] + "원 : " + wonArr[i] + "개");
 		}
 		

@@ -12,7 +12,7 @@ public class Ex08 {
 
 		//랜덤한 숫자 생성
 		for (int i = 0; i < num.length; i++) {
-			num[i] = (int) (Math.random() * 7) + 1;
+			num[i] = (int) (Math.random() * 45) + 1;
 
 			//중복체크
 			for (int j = 0; j < i; j++) {
