@@ -6,8 +6,8 @@ public class Ex07 {
 		
 		//배열 2개를 선언하고 동일한지 비교해보기
 		//배열선언
-		int[] leftArray = new int[] {10, 20, 30};
-		int[] rightArray = new int[] {11, 20, 33};
+		int[] leftArray = new int[] {10, 20, 30, 40, 50};
+		int[] rightArray = new int[] {11, 20, 33, 40, 55};
 		
 		//두 배열의 크기가 같은지 비교하는 boolean
 		boolean arr = true;
