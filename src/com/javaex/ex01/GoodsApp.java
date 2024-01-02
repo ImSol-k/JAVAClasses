@@ -5,13 +5,14 @@ public class GoodsApp {
 	public static void main(String[] args) {
 		
 		Goods camera = new Goods();
-		Goods computer = new Goods();
-		Goods cup = new Goods();
-		
 		camera.name = "니콘";
-		camera.price = 400000;		
+		camera.price = 400000;
+		
+		Goods computer = new Goods();
 		computer.name = "LG그램";
-		computer.price = 900000;		
+		computer.price = 900000;
+		
+		Goods cup = new Goods();	
 		cup.name = "머그컵";
 		cup.price = 2000;
 		
