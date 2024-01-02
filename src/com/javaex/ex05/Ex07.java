@@ -7,24 +7,32 @@ public class Ex07 {
 		//배열 2개를 선언하고 동일한지 비교해보기
 		//배열선언
 		int[] leftArray = new int[] {10, 20, 30, 40, 50};
-		int[] rightArray = new int[] {11, 20, 33, 40, 55};
+		int[] rightArray = new int[] {11, 22, 30, 40, 55};
 		
 		//두 배열의 크기가 같은지 비교하는 boolean
-		boolean arr = true;
+		boolean arr = true;		
 		
-		
-		for (int i = 0; i < rightArray.length; i++) {
+		//두 배열의 길이가 같으면
+		if(leftArray.length == rightArray.length){
 			
-			//두 배열의 크기가 같으면 arr는 true
-			if(leftArray[i] == rightArray[i]) {
-				arr = true;
+			for (int i = 0; i < rightArray.length; i++) {
+
+				// rightArray[i] = leftArray[i];
+
+				// 두 배열의 크기가 같으면 arr는 true
+				if (leftArray[i] == rightArray[i]) {
+					arr = true;
+				}
+
+				// 같지 않으면 몇번째 값이 다른지 출력후 arr는 false
+				else {
+					System.out.println(i + "번째 값이 다릅니다");
+					arr = false;
+				}
 			}
-			
-			//같지 않으면 몇번째 값이 다른지 출력후 arr는 false
-			else {
-				System.out.println(i + "번째 값이 다릅니다");
-				arr = false;
-			}
+		}//두 배열의 길이가 다르면
+		else {
+			arr= false;
 		}
 		
 		//arr가 참일때 출력
