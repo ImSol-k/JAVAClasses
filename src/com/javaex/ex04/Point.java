@@ -6,10 +6,10 @@ public class Point {
 	private int y;
 	
 	//x,y값 받아오는 메소드
-	public void getX(int x) {
+	public void setX(int x) {
 		this.x = x;
 	}
-	public void getY(int y) {
+	public void setY(int y) {
 		this.y = y;
 	}
 	
