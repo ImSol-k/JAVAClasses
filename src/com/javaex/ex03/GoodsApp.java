@@ -19,7 +19,7 @@ public class GoodsApp {
 		cup.setPrice(2000);
 		
 		Goods sum = new Goods();
-		sum.sum();
+		//sum.sum();
 		
 		camera.showInfo();
 		computer.showInfo();

@@ -11,12 +11,13 @@ public class Goods {
 	private String pr = "가격 : ";
 	private int price;
 	
+	//GetterSetter메소드
 	//매개변수 있는 메소드
-	public void setName(String n) {
-		name = n;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public void setPrice(int p) {
-		price = p;
+	public void setPrice(int price) {
+		this.price = price;
 	}
 	
 	//매개변수 없는 메소드
@@ -27,10 +28,13 @@ public class Goods {
 		return price;
 	}
 	
+	//일반메소드
+	//출력메소드
 	public void showInfo() {
+		System.out.println("==============");
 		System.out.println(na + name);
 		System.out.println(pr + price);
-		System.out.println();
+		System.out.println("==============");
 	}
 	
 	//숫자 입력받고 더하기
