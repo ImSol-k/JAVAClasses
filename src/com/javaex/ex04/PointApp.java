@@ -14,6 +14,8 @@ public class PointApp {
 		
 		p1.draw();
 		p2.draw();
+		System.out.println("첫번째 이동 : " + (p1.getX() + p1.getY()));
+		System.out.println("두번째 이동 : " + (p2.getX() + p2.getY()));
 		
 	}
 
