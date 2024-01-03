@@ -12,6 +12,12 @@ public class Point {
 	public void setY(int y) {
 		this.y = y;
 	}
+	public int getX() {
+		return x;
+	}
+	public int getY() {
+		return y;
+	}
 	
 	//출력메소드
 	public void draw() {
