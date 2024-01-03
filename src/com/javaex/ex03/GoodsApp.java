@@ -6,7 +6,6 @@ public class GoodsApp {
 	public static void main(String[] args) {
 		
 		//private(캡슐화)
-		//니콘, 400000 인자
 		Goods camera = new Goods();		
 		camera.setName("니콘");	
 		camera.setPrice(400000);

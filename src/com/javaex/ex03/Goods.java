@@ -33,13 +33,18 @@ public class Goods {
 		System.out.println();
 	}
 	
+	//숫자 입력받고 더하기
 	public void sum() {
+		int i, j, result;
+		
 		System.out.print("숫자 : ");
-		int i = in.nextInt();
+		i = in.nextInt();
+		
 		System.out.println("+");
 		System.out.print("숫자 : ");
-		int j = in.nextInt();
-		int result = i + j;
+		j = in.nextInt();
+		
+		result = i + j;
 		System.out.println("결과 : " + result);
 		System.out.println();
 	}
