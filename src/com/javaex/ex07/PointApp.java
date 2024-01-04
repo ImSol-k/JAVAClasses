@@ -4,21 +4,14 @@ public class PointApp {
 
 	public static void main(String[] args) {
 		
-		Point po1 = new Point();
-		po1.setX(33);
-		po1.setY(8);
+		Point po1 = new Point(-3, -2);
+		Point po2 = new Point(100, 100);
 		
-		Point po2 = new Point(8);
-		po2.setY(43);
-		
-		Point po3 = new Point(20, 30);
-		
+		System.out.println(po1.line);
 		po1.draw();
-		po2.draw();
-		po3.draw();
+		po2.draw(true);
+		po1.draw(false);
 		
-		po2.setX(34);
-		po2.draw();
 	}
 
 }

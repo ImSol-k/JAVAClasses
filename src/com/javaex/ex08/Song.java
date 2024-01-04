@@ -23,6 +23,7 @@ public class Song {
 	public void showInfo() {
 		System.out.println(atist + ", " + title + "(" + album + ", " + track + "번 track, " + composer + " 작곡)");
 	}
+	
 	@Override
 	public String toString() {
 		return "Song [title=" + title + ", atist=" + atist + ", album=" + album + ", composer=" + composer + ", year="
