@@ -19,8 +19,10 @@ public class Goods {
 	}
 	//생성자 오버로딩
 	public Goods(String name, int price) {	
+		//기존에 있던 생성자 호출
+		//생성자 제일 윗줄에 호출해야함
+		this(name);
 		System.out.println("Goods(name, price)");
-		this.name = name;
 		this.price = price;
 	}
 	
