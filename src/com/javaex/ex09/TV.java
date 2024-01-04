@@ -11,6 +11,7 @@ public class TV {
 		this.power = power;
 	}
 
+	//GetterSetter메소드
 	public int getChannel() {
 		if(channel < 1) {
 			this.channel = 1;
@@ -24,7 +25,6 @@ public class TV {
 			return channel;
 		}		
 	}
-
 	public int getVolume() {
 		if(volume < 0) {
 			this.volume = 0;
@@ -38,11 +38,11 @@ public class TV {
 			return volume;
 		}
 	}
-
 	public boolean getPower() {
 		return power;
 	}
 	
+	//증감처리
 	public void channel(boolean channel) {
 		if(channel == true) {
 			this.channel ++;
@@ -50,9 +50,6 @@ public class TV {
 		else {
 			this.channel --;
 		}
-	}
-	public void channel(int channel) {
-		this.channel = channel;
 	}
 	public void volume(boolean volume) {
 		if(volume == true) {
@@ -62,6 +59,11 @@ public class TV {
 			this.volume --;
 		}
 	}
+	
+	//오버로딩
+	public void channel(int channel) {
+		this.channel = channel;
+	}
 	public void volume(int volume) {
 		this.volume = volume;
 	}
@@ -69,6 +71,7 @@ public class TV {
 		this.power = power;
 	}
 	
+	//출력
 	public void status() {
 		System.out.println("채널 : " + getChannel() + " / 볼륨 : " + getVolume() + " / 파워 : " + getPower());
 	}
