@@ -8,18 +8,22 @@ public class Goods {
 	
 	//생성자
 	//데이터를 메모리에 올리는 역할
+	//기본생성자
 	public Goods() {
-		System.out.println("기본생성자");
+		System.out.println("Goods()");
 	}
+	//부가적인 일을 하는 생성자
+	public Goods(String name) {
+		System.out.println("Goods(name)");
+		this.name = name;
+	}
+	//생성자 오버로딩
 	public Goods(String name, int price) {	
-		System.out.println("name, price입력 생성자");
+		System.out.println("Goods(name, price)");
 		this.name = name;
 		this.price = price;
 	}
-	public Goods(String name) {
-		System.out.println("name만 입력 생성자");
-		this.name = name;
-	}
+	
 	
 	//메소드
 	public String getName() {

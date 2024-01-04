@@ -14,8 +14,9 @@ public class GoodsApp {
 		//생성자생성과 동시에 메모리에 데이터를 올려주는형식
 		Goods computer = new Goods("LG그램");
 		computer.setPrice(900000);
-		
+		//기본생성자와 같은방법으로 값을 바꿔 줄 수 있다
 		Goods cup = new Goods("머그컵", 2000);
+		cup.setName("머그");
 		
 		System.out.println(camera.toString());
 		System.out.println(computer.toString());
