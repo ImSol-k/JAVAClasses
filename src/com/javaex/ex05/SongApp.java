@@ -33,13 +33,15 @@ public class SongApp {
 //		so3.setSong("버스커버스커", "벚꽃엔딩");
 //		so3.setAlbum("버스커버스커1집", 2012, 4, "장범준");
 		
+		System.out.println("======================================================");
+		so1.showInfo();
+		so2.showInfo();
+		so3.showInfo();
+		
 		// 검사용 toString메소드로 확인하는 방법
-		System.out.println(so1.toString());
-		System.out.println(so2.toString());
-		System.out.println(so3.toString());
-//		so1.showInfo();
-//		so2.showInfo();
-//		so3.showInfo();
+//		System.out.println(so1.toString());
+//		System.out.println(so2.toString());
+//		System.out.println(so3.toString());
 
 	}
 }

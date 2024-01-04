@@ -8,7 +8,7 @@ public class Song {
 	private String composer;
 	private int track;
 	private int year;
-
+	
 	public String getTitle() {
 		return title;
 	}
@@ -70,11 +70,14 @@ public class Song {
 	 * }
 	 */
 	
-	public void showInfo() {
+	public void showInfo() {		
 		System.out.println(
 				artist + ", " + title + "(" + album + ", " + year + ", " + track + "번 track, " + composer + " 작곡)");
+		System.out.println("======================================================");
 	}
+	
 	//검사용 문자열
+	//그래픽 작업 하기 전 값이 잘 들어가 있는지 확인용 메소드
 	@Override
 	public String toString() {
 		return "Song [title=" + title + ", artist=" + artist + ", album=" + album + ", composer=" + composer
