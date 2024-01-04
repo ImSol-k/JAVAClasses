@@ -13,10 +13,12 @@ public class TV {
 
 	public int getChannel() {
 		if(channel < 1) {
-			return 1;
+			this.channel = 1;
+			return channel;
 		}
 		else if(channel > 255) {
-			return 255;
+			this.channel = 255;
+			return channel;
 		}
 		else {
 			return channel;
@@ -25,10 +27,12 @@ public class TV {
 
 	public int getVolume() {
 		if(volume < 1) {
-			return 1;
+			this.volume = 0;
+			return volume;
 		}
 		else if(volume > 100) {
-			return 100;
+			this.volume = 100;
+			return volume;
 		}
 		else {
 			return volume;
