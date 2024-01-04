@@ -26,7 +26,7 @@ public class TV {
 	}
 
 	public int getVolume() {
-		if(volume < 1) {
+		if(volume < 0) {
 			this.volume = 0;
 			return volume;
 		}
