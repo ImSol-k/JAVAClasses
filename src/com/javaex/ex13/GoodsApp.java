@@ -5,7 +5,8 @@ public class GoodsApp {
 	public static void main(String[] args) {
 
 		//클래스 배열 선언
-		Goods[] goodsArray = new Goods[3];
+		Goods[] goodsArray = new Goods[5];
+		int count = 0;
 		
 		//데이터 입력
 		Goods camera = new Goods("니콘", 400000);
@@ -25,21 +26,32 @@ public class GoodsApp {
 		
 		//for문으로 한꺼번에 출력
 		for (int i = 0; i < goodsArray.length; i++) {
-			System.out.println("goodsArray[" + i + "].getName = " + goodsArray[i].getName());
+			if (goodsArray[i] != null) {
+				System.out.println("goodsArray[" + i + "].getName = " + goodsArray[i].getName());
+			}
 		}
 		System.out.println(line);
 		for (int i = 0; i < goodsArray.length; i++) {
-			System.out.println("goodsArray[" + i + "].getPrice = " +goodsArray[i].getPrice());
+			if (goodsArray[i] != null) {
+				System.out.println("goodsArray[" + i + "].getPrice = " + goodsArray[i].getPrice());
+			}
 		}
 		System.out.println(line);
 		for (int i = 0; i < goodsArray.length; i++) {
-			System.out.println(goodsArray[i].toString());
+			if (goodsArray[i] != null) {
+				System.out.println(goodsArray[i].toString());
+			}
 		}
 		System.out.println(line);
 		for (int i = 0; i < goodsArray.length; i++) {
-			goodsArray[i].showInfo();
+			//예외처리
+			if (goodsArray[i] != null) {
+				goodsArray[i].showInfo();
+				count += 1;
+			}
 		}
 		System.out.println(line);
+		System.out.println("전채상품갯수 : " + count);
 
 	}
 
