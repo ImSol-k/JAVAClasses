@@ -1,17 +1,12 @@
 package com.javaex.ex12;
 
+import java.util.Scanner;
+
 public class Math {
 	
-	//필드
+	private Scanner in = new Scanner(System.in);
+	private static double pi = 3.14;
 	
-	
-	//생성자
-	
-	
-	//메소드gs
-	
-	
-	//메소드
 	public static int plus(int a, int b){
 		return a + b;
 	}
@@ -26,5 +21,10 @@ public class Math {
 		
 		return sum;
 	}
+	
+	public static double circleArea(int radius) {
+		return pi * radius * radius;
+	}
+	
 	
 }
