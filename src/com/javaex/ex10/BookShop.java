@@ -24,12 +24,12 @@ public class BookShop {
         Scanner scanner = new Scanner(System.in);
         System.out.print("대여 하고 싶은 책의 번호를 입력하세요:");
         int num = scanner.nextInt();
-       
+        num -= 1;
 
         // (1) 입력된 번호에 맞는 책을 찾아 대여 되었음(상태코드=0)을 체크 합니다.
         // 코드작성
-        
-        
+        System.out.println(books[num].getTitle() + "이(가) 대여 됐습니다");
+        books[num].rent(0);
 
         System.out.println("*****도서 정보 출력하기******");
         displayBookInfo(books);
@@ -41,5 +41,9 @@ public class BookShop {
     private static void displayBookInfo(Book[] books) {
         
     	//코드작성
+    	for (int i = 0; i < books.length; i++) {
+    		books[i].print();
+		}
+    	System.out.println();
     }
 }
