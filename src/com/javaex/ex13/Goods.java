@@ -1,22 +1,20 @@
-package com.javaex.ex11;
+package com.javaex.ex13;
 
 public class Goods {
 	
+	//필드
 	private String name;
 	private int price;
-	public static int count;
 	
+	//생성자
 	public Goods() {
-		count = count + 1;
-	}
-	
+	}	
 	public Goods(String name, int price) {
 		this.name = name;
 		this.price = price;
-		count = count + 1;
 	}
 	
-	
+	//GetterSetter메소드
 	public String getName() {
 		return name;
 	}
@@ -29,14 +27,15 @@ public class Goods {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	public int getCount() {
-		return count;
+	
+	public void showInfo() {
+		System.out.println("상품이름 : " + name + "\t가격 : " + price);
 	}
 	
-
+	//임시출력
 	@Override
 	public String toString() {
-		return "Goods [name=" + name + ", price=" + price + ", count=" + count + "]";
+		return "Goods [name=" + name + ", price=" + price + "]";
 	}
 	
 	

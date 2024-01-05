@@ -1,10 +1,7 @@
 package com.javaex.ex12;
 
-import java.util.Scanner;
-
 public class Math {
 	
-	private Scanner in = new Scanner(System.in);
 	private static double pi = 3.14;
 	
 	public static int plus(int a, int b){
