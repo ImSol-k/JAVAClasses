@@ -22,10 +22,14 @@ public class TVApp {
 		
 		tv.volume(false);
 		tv.volume(102);
-		
 		tv.channel(false);
 		
 		tv.status();
+		
+		tv.volume(true);
+		
+		tv.status();
+		
 		tv.volume(false);
 		tv.volume(false);
 		tv.volume(false);
