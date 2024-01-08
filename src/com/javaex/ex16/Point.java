@@ -2,10 +2,11 @@ package com.javaex.ex16;
 
 public class Point {
 	
+	//필드
 	private int x;
 	private int y;
 	
-	
+	//생성자
 	public Point() {
 		System.out.println("Point()");
 	}
@@ -15,7 +16,7 @@ public class Point {
 		System.out.println("Point(x, y)");
 	}
 	
-	
+	//GetterSetter메소드
 	public int getX() {
 		return x;
 	}
@@ -29,7 +30,7 @@ public class Point {
 		this.y = y;
 	}
 	
-	
+	//toString
 	@Override
 	public String toString() {
 		return "[x=" + x + ", y=" + y + "]을 그렸습니다.";
