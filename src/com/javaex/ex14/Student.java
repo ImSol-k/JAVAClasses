@@ -8,8 +8,13 @@ public class Student extends Person {
 		System.out.println("Student");
 	}
 	public Student(String name, int age, String schoolName) {
+		
 		//부모클래스 생성자 호출
-		super(name, age);
+		//super(name, age);
+		super();
+		super.setName(name);
+		setAge(age);
+		
 		//본인껀 본인생성자에서 해결
 		this.schoolName = schoolName;
 		System.out.println("Student3");
