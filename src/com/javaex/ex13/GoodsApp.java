@@ -51,7 +51,7 @@ public class GoodsApp {
 			}
 		}
 		System.out.println(line);
-		System.out.println("전채상품갯수 : " + count);
+		System.out.println("전체상품갯수 : " + count);
 
 	}
 
