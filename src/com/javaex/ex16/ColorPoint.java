@@ -30,7 +30,7 @@ public class ColorPoint extends Point{
 	//toString
 	@Override
 	public String toString() {
-		return "ColorPoint [x=" + getX() + ", y=" + getY() + ", color=" + color + "]";
+		return "ColorPoint [x=" + super.x + ", y=" + super.y + ", color=" + color + "]";
 	}
 	
 		
