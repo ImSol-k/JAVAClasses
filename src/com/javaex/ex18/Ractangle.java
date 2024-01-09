@@ -10,7 +10,9 @@ public class Ractangle extends Shape {
 	public Ractangle() {
 	}
 	public Ractangle(String lineColor, String fillColor, int width,  int height) {
-		super(lineColor, fillColor);
+		super();
+		super.setLineColor(lineColor);
+		super.setFillColor(fillColor);
 		this.width = width;
 		this.height = height;
 	}
