@@ -39,6 +39,7 @@ public class Triangle extends Shape {
 	    System.out.println("==========================");
 	}
 	
+	//toString
 	@Override
 	public String toString() {
 		return "T[lineColor=" + getLineColor() + ", fillColor=" + getFillColor() + "] [widht=" + widht + ", height="

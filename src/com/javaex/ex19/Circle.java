@@ -27,6 +27,8 @@ public class Circle extends Shape {
 	    System.out.println("선색:" + getLineColor());
 	    System.out.println("==========================");
 	}
+	
+	//toString
 	@Override
 	public String toString() {
 		return "C[lineColor=" + getLineColor() + ", fillColor=" + getFillColor() + "] [radius=" + radius + "]";

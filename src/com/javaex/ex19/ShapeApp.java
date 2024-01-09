@@ -4,8 +4,8 @@ public class ShapeApp {
 	
 	public static void main(String[] args) {
 		
-		Ractangle rac = new Ractangle("빨강", "빨강", 2, 2);
-		System.out.println(rac.getWidth());
+		//Ractangle rac = new Ractangle("빨강", "빨강", 2, 2);
+		//System.out.println(rac.getWidth());
 		
 		Shape[] sArr = new Shape[3];
 		//섞어쓰기를 한 클래스들은 본인의 필드, 메소드에 접근하지 못한다
@@ -17,12 +17,13 @@ public class ShapeApp {
 		sArr[2] = s3;
 		
 		//메소드 오버라이딩
+		System.out.println("toString() 출력");
 		for (int i = 0; i < sArr.length; i++) {
 			System.out.println("====================================================");
 			System.out.println(sArr[i].toString());		
 		}
 		System.out.println("====================================================");
-		System.out.println();
+		System.out.println("\ndraw() 출력");
 		for (int i = 0; i < sArr.length; i++) {
 			sArr[i].draw();
 		}

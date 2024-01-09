@@ -25,13 +25,10 @@ public class Shape {
 		this.fillColor = fillColor;
 	}
 	
-	public void draw() {
-//	    System.out.println("=====도형을 그렸습니다=========");
-//	    System.out.println("면색:" + getFillColor());
-//	    System.out.println("선색:" + getLineColor());
-//	    System.out.println("==========================");
-	}
+	//오버라이딩용 draw
+	public void draw() { }
 	
+	//toString
 	@Override
 	public String toString() {
 		return "Shape [lineColor=" + lineColor + ", fillColor=" + fillColor + "]";
