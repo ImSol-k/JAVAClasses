@@ -1,4 +1,4 @@
-package com.javaex.ex17;
+package com.javaex.ex18;
 
 public class ShapeApp {
 	
