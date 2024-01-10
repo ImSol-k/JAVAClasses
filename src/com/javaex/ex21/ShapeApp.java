@@ -42,6 +42,7 @@ public class ShapeApp {
 			else if(dArr[i] instanceof Point) {
 				System.out.println("((Point)dArr[i]).getX() = " + ((Point)dArr[i]).getX() + "\n((Point)dArr[i]).getY()" + ((Point)dArr[i]).getY());
 			}
+			
 		}
 		
 		
