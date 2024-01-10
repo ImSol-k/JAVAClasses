@@ -1,11 +1,8 @@
-package com.javaex.ex19;
+package com.javaex.ex20;
 
 public class ShapeApp {
 	
 	public static void main(String[] args) {
-		
-		//Ractangle rac = new Ractangle("빨강", "빨강", 2, 2);
-		//System.out.println(rac.getWidth());
 		
 		Shape[] sArr = new Shape[3];
 		//업캐스팅
