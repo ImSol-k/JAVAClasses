@@ -14,17 +14,21 @@ public class ShapeApp {
 		sArr[2] = s3;
 		
 		//메소드 오버라이딩
-		System.out.println("toString() 출력");
-		for (int i = 0; i < sArr.length; i++) {
-			System.out.println("====================================================");
+		System.out.println("====toString() 출력==================================");
+		for (int i = 0; i < sArr.length; i++) {			
 			System.out.println(sArr[i].toString());		
 		}
-		System.out.println("====================================================");
-		System.out.println("\ndraw() 출력");
+		System.out.println("====draw() 출력======================================");
 		for (int i = 0; i < sArr.length; i++) {
 			sArr[i].draw();
 		}
+		System.out.println("==========================");
+		for (int i = 0; i < sArr.length; i++) {
+			System.out.println("sArr[" + i + "].area() = " + sArr[i].area());
+		}
+		System.out.println("==========================");
 		
+		//다운캐스팅
 		//강제형변환으로 자식클래스에 접근
 		System.out.println("((Ractangle)sArr[0]).getHeight() = " + ((Ractangle)sArr[0]).getHeight());
 		

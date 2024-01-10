@@ -23,15 +23,12 @@ public abstract class Shape {
 	}
 	public void setFillColor(String fillColor) {
 		this.fillColor = fillColor;
-	}
-	
-	//오버라이딩용 draw
-	public void draw() { 
-		System.out.println();
-	}
+	}	
 	
 	//추상화
-	public abstract double area() { } 
+	public abstract double area();
+	
+	public abstract void draw();
 	
 	//toString
 	@Override

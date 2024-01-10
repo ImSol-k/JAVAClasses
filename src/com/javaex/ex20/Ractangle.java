@@ -36,6 +36,11 @@ public class Ractangle extends Shape {
 		this.height = height;
 	}
 	
+	public double area() {
+		double area = width * height;		
+		return area;
+	}
+	
 	public void draw() {
 	    System.out.println("====사각형을 그렸습니다=========");
 	    System.out.println("가로:" + width);
