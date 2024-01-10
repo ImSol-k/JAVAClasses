@@ -28,10 +28,6 @@ public abstract class Shape {
 	//추상화
 	public abstract double area();
 	
-	public void draw() {
-		System.out.println();
-	}
-	
 	//toString
 	@Override
 	public String toString() {
