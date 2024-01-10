@@ -14,11 +14,11 @@ public class ShapeApp {
 		sArr[2] = s3;
 		
 		//메소드 오버라이딩
-		System.out.println("====toString() 출력==================================");
+		System.out.println("====toString() 출력========");
 		for (int i = 0; i < sArr.length; i++) {			
 			System.out.println(sArr[i].toString());		
 		}
-		System.out.println("====draw() 출력======================================");
+		System.out.println("====draw() 출력=============");
 		for (int i = 0; i < sArr.length; i++) {
 			sArr[i].draw();
 		}

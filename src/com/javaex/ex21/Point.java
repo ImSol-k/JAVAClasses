@@ -19,25 +19,21 @@ public class Point implements Drawable {
 	}
 	public int getY() {
 		return y;
-	}
+	} 
 	public void setY(int y) {
 		this.y = y;
 	}
 
 	public void draw() {
 		System.out.println("======점을 그렸습니다=========");
-	    System.out.println("x:" + x);
-	    System.out.println("x:" + y);
+	    System.out.println("x좌표:" + x);
+	    System.out.println("y좌표:" + y);
 		System.out.println("==========================");
-	}
-
-	public double area() {
-		return 0.0;
 	}
 
 	@Override
 	public String toString() {
-		return "Point [x=" + x + ", y=" + y + "]";
+		return "P[x=" + x + ", y=" + y + "]";
 	}
 	
 }
