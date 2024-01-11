@@ -19,10 +19,7 @@ public class Ex08 {
 		}
 		for (int i = 0; i < fArr.length; i++) {
 			fArr[i].showInfo();
-		}
-		
-		
-		
+		}		
 		
 		in.close();
 	}
