@@ -10,7 +10,6 @@ public class RectangleApp {
 		Rectangle d = new Rectangle(3, 8);
 		Rectangle e = new Rectangle(12, 4);
 		
-		
 		System.out.println(a.equals(b));
 		System.out.println(a.equals(c));
 		System.out.println(a.equals(d));
