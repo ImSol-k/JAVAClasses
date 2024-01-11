@@ -7,7 +7,6 @@ public class Friend {
 	String school;
 	
 	public Friend(String name, String ph, String school) {
-		super();
 		this.name = name;
 		this.ph = ph;
 		this.school = school;
@@ -33,7 +32,9 @@ public class Friend {
 		this.school = school;
 	}
 	
-	
+	public void showInfo() {
+		System.out.println("이름 : " + name + " 핸드폰 : " + ph + " 학교 : " + school);
+	}
 	
 	
 }
