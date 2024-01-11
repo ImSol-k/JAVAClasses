@@ -12,32 +12,29 @@ public class CalcApp {
 		boolean start = true;
 		int num1, num2;
 
-//		for (int i = 0; i < sArr.length; i++) {
-//			if ("+".equals(sArr[i])) {
-//				sym = "+";
-//			} else if ("-".equals(sArr[i])) {
-//				sym = "-";
-//			} else if ("*".equals(sArr[i])) {
-//				sym = "*";
-//			} else if ("/".equals(sArr[i])) {
-//				sym = "/";
-//			} else {
-//				sym = sArr[i];
-//			}
-//
-//		}
-
 		while (start) {
+			
+			//입력받기
 			System.out.print(">> ");
 			calc = in.nextLine();
+			
+			// /q를 입력받으면 종료
 			if ("/q".equals(calc)) {
+				System.out.println("종료합니다");
 				start = false;
 			} 
+			
+			//아니면 반복실행
 			else {
 				start = true;
-				sArr = calc.split(" ");
+				
+				//받은 문자열을 공백으로 나눠서 배열에 저장
+				sArr = calc.split(" ");	
+				//문자열을 숫자로 변환
 				num1 = Integer.parseInt(sArr[0]);
 				num2 = Integer.parseInt(sArr[2]);
+				
+				//기호별 실행명령??
 				switch (sArr[1]) {
 				case "+":
 					Add add = new Add();
@@ -65,7 +62,6 @@ public class CalcApp {
 				}
 			}			
 		}
-		System.out.println("종료합니다");
 		
 		in.close();
 	}
