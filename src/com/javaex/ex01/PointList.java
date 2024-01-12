@@ -33,7 +33,7 @@ public class PointList {
 	}
 	
 	
-	public void pArrPrint() {
+	public void showInfo() {
 		for (int i = 0; i < crtPos; i++) {
 			System.out.println("[" + i + "]x = " + pArr[i].getX() + ", y = " +  pArr[i].getY());
 		}
@@ -42,7 +42,7 @@ public class PointList {
 
 	@Override
 	public String toString() {
-		return "PointList [pArr=" + Arrays.toString(pArr) + ", crtPos=" + crtPos + "]";
+		return "PointList \n" + Arrays.toString(pArr) + ", crtPos=" + crtPos;
 	}
 	
 	
