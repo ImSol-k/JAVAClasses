@@ -1,11 +1,13 @@
-package com.javaex.ex02;
+package com.javaex.ex01;
 
 public class Point {
-
+	
+	//필드
 	private int x;
 	private int y;
 	
 	
+	//생성자
 	public Point() {
 		super();
 	}
@@ -16,6 +18,7 @@ public class Point {
 	}
 	
 	
+	//GetterSetter
 	public int getX() {
 		return x;
 	}
@@ -30,8 +33,8 @@ public class Point {
 	}
 	
 	
-	//toString 재정의
-	//Object의 toString 오버라이딩
+	//일반
+	//Object의 toString 재정의
 	@Override
 	public String toString() {
 		return "Point [x=" + x + ", y=" + y + "]";
@@ -39,7 +42,4 @@ public class Point {
 	
 	
 	
-	
-	
-
 }
