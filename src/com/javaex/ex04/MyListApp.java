@@ -8,7 +8,7 @@ public class MyListApp {
 	public static void main(String[] args) {
 		
 		//PointList
-		List<Point> pList = new ArrayList<Point>();
+		ArrayList<Point> pList = new ArrayList<Point>();
 		Point p1 = new Point(1, 1);
 		Point p2 = new Point(2, 2);
 		Point p3 = new Point(3, 3);
