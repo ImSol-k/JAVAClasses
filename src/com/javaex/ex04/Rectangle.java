@@ -1,6 +1,6 @@
 package com.javaex.ex04;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements Resizeable {
     private double width;
     private double height;
     
@@ -18,5 +18,8 @@ public class Rectangle extends Shape {
     	return (width + height) * 2;
     }
     
+    public void resize(double s) {
+    	width = width * s;
+    }
     
 }

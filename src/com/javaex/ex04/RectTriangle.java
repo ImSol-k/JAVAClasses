@@ -16,7 +16,10 @@ public class RectTriangle extends Shape {
     	return (width * height) / 2;
     }
     public double getPerimeter() {
-    	return width + height;
+    	
+    	double result = Math.sqrt(Math.pow(width, 2) +Math.pow(height, 2));
+    	
+    	return width + height + result;
     }
     
 }
