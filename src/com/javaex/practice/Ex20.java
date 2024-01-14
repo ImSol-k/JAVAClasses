@@ -28,7 +28,7 @@ public class Ex20 {
 			num = in.nextInt();
 			in.nextLine();
 			
-			if(num > random) {
+			if(num > random) { 
 				System.out.println("더 낮게");
 			}
 			else if(num < random) {
