@@ -6,7 +6,6 @@ public class Rectangle extends Shape implements Resizeable {
     
     
     public Rectangle(double width, double height) {
-    	super(4);
 		this.width = width;
 		this.height = height;
 	}
