@@ -31,11 +31,6 @@ public class Ex01 {
 		System.out.println("toString" + iSet.toString());
 		
 		
-		
-		
-		
-		
-		
 	}
 
 }
