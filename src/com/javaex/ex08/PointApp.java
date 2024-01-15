@@ -23,11 +23,11 @@ public class PointApp {
 		System.out.println("keySet " + pMap.keySet());
 		System.out.println("============================");
 		
-		Point po4 = new Point(100, 100);
-		pMap.put("이효리", po4);
-		System.out.println(pMap.toString());
-		System.out.println("============================");
-		
+//		Point po4 = new Point(100, 100);
+//		pMap.put("이효리", po4);
+//		System.out.println(pMap.toString());
+//		System.out.println("============================");
+//		
 		
 		Set<String> keys = pMap.keySet();
 		for(String str : keys) {
